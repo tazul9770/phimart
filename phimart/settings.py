@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'drf_yasg',
     'django_filters',
-    "corsheaders",
+    # "corsheaders",
     'rest_framework',
     'djoser',
     'api',
@@ -44,7 +44,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    "corsheaders.middleware.CorsMiddleware",
+    # "corsheaders.middleware.CorsMiddleware",
     "debug_toolbar.middleware.DebugToolbarMiddleware",
     'django.middleware.security.SecurityMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
@@ -76,9 +76,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'phimart.wsgi.app'
 
-CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',
-]
+# CORS_ALLOWED_ORIGINS = [
+#     'http://localhost:5173',
+# ]
 
 INTERNAL_IPS = [
     "127.0.0.1",
